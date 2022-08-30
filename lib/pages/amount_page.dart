@@ -166,10 +166,13 @@ class _AmountPageState extends State<AmountPage> {
                           )),
                           InkWell(
                             onTap: () {
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(builder: (context) => const PinPage(menu: HomeMenu.SEND_MONEY,)),
-                              // );
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const PinPage(
+                                          menu: HomeMenu.sendMoney,
+                                        )),
+                              );
                             },
                             child: Icon(
                               Icons.arrow_forward,

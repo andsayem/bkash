@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: _bottomMenu.elementAt(_selectedIndex),
       endDrawer: const DrawerWidget(),
       floatingActionButton: FloatingActionButton(
-        tooltip: ' QR',
+        tooltip: 'Scan QR',
         elevation: 2.0,
         backgroundColor: Colors.white,
         onPressed: () {

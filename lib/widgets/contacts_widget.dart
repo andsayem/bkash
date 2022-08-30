@@ -80,10 +80,13 @@ class ContactsWidget extends StatelessWidget {
                 } else {
                   return InkWell(
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => const AmountPage(menu: HomeMenu.SEND_MONEY,)),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const AmountPage(
+                                  menu: HomeMenu.sendMoney,
+                                )),
+                      );
                     },
                     child: Container(
                       margin: const EdgeInsets.all(12.0),
